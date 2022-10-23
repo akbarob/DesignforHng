@@ -7,6 +7,7 @@ import { ReactComponent as Zuri } from "./assets/Zuri.svg";
 import { ReactComponent as I4g } from "./assets/I4G.svg";
 import { ReactComponent as Camera } from "./assets/camera-01.svg";
 import { ReactComponent as More } from "./assets/more.svg";
+import { ReactComponent as CursorIcon } from "./assets/Cursor.svg";
 
 const links = [
   {
@@ -69,7 +70,7 @@ function App() {
             </button>
             <button class="hidden lg:flex mt-10 group relative duration-300 cursor-pointer border-2 border-dotted rounded-full p-2 hover:bg-[#F9FAFB]  focus:ring-[4px] focus:ring-gray-100">
               <Share className="group-hover:stroke-gray-500 stroke-gray-400" />
-              {/* <Cursor className="group-hover:flex hidden absolute mt-3 ml-3" /> */}
+              <CursorIcon className="group-hover:flex hidden absolute mt-3 ml-3" />
               <span class="absolute hidden group-hover:flex -top-1 -left-4 -translate-x-full  px-3 py-2 bg-gray-900 w-[85px] h-[34px] rounded-lg text-center text-white text-xs before:content-[''] before:absolute before:top-1/2  before:left-[100%] before:-translate-y-1/2 before:border-8 before:border-y-transparent before:border-l-gray-900 before:border-r-transparent font-semibold ">
                 Share Link
               </span>
