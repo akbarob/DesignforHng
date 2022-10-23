@@ -14,21 +14,21 @@ const links = [
     link: `https://training.zuri.team/`,
     name: "Twitter Link",
   },
-  { id: "btn__zuri", link: `https://training.zuri.team/`, name: "Zuri Team" },
+  { id: "books", link: `https://training.zuri.team/`, name: "Zuri Team" },
   { id: "btn__zuri", link: `https://books.zuri.team/`, name: "Zuri Books" },
   {
-    id: "btn__zuri",
-    link: `https://training.zuri.team/`,
+    id: "btn__python",
+    link: `https://books.zuri.team/python-for-beginners?ref_id=Akbar`,
     name: "Python Books",
   },
   {
-    id: "btn__zuri",
-    link: `https://training.zuri.team/`,
+    id: "pitch",
+    link: `https://background.zuri.team/`,
     name: "Background Check for Coders",
   },
   {
-    id: "btn__zuri",
-    link: `https://training.zuri.team/`,
+    id: "btn__design",
+    link: `https://books.zuri.team/design-rules`,
     name: "Design Books",
   },
 ];
@@ -43,12 +43,22 @@ function App() {
               <Camera className="absolute bottom-2 right-8" />
             </div>
             <img
+              id="profile__img"
               src={profileimg}
               className="w-[88px] h-[88px] rounded-full cursor-pointer"
             />
           </div>
-          <p className="font-bold text-[20px] text-[#101828] mt-[24px]">
-            Annette Black
+          <p
+            id="twitter"
+            className="font-bold text-[20px] text-[#101828] mt-[24px]"
+          >
+            akbar_ob
+          </p>
+          <p
+            id="slack"
+            className="hidden font-bold text-[20px] text-[#101828] mt-[24px]"
+          >
+            Akbar
           </p>
         </div>
 
@@ -66,12 +76,14 @@ function App() {
       </section>
       <section className="">
         {links?.map((item) => (
-          <div
-            className=" flex w-[343px]
-          h-[68px] lg:w-[1152px] lg:h-[76px] rounded-[8px]  bg-gray-200 my-[12px] mx-auto text-center items-center justify-center cursor-pointer hover:bg-gray-300"
-          >
-            <p className="text-gray-900 text-lg font-semibold">{item.name}</p>
-          </div>
+          <a href={item.link}>
+            <button
+              className=" flex w-[343px]
+        h-[68px] lg:w-[1152px] lg:h-[76px] rounded-[8px]  bg-gray-200 my-[12px] mx-auto text-center items-center justify-center cursor-pointer hover:bg-gray-300"
+            >
+              <p className="text-gray-900 text-lg font-semibold">{item.name}</p>
+            </button>
+          </a>
         ))}
       </section>
       <div className="flex justify-center mt-[24px] h-[72px]  items-center">
