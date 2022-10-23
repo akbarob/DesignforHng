@@ -64,7 +64,20 @@ function App() {
           </button>
         </div>
       </section>
-      <section>Links</section>
+      <section className="">
+        {links?.map((item) => (
+          <div
+            className=" flex w-[343px]
+          h-[68px] lg:w-[1152px] lg:h-[76px] rounded-[8px]  bg-gray-200 my-[12px] mx-auto text-center items-center justify-center cursor-pointer hover:bg-gray-300"
+          >
+            <p className="text-gray-900 text-lg font-semibold">{item.name}</p>
+          </div>
+        ))}
+      </section>
+      <div className="flex justify-center mt-[24px] h-[72px]  items-center">
+        <Slack />
+        <Github className="ml-[26.5px]" />
+      </div>
     </main>
   );
 }
