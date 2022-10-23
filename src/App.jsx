@@ -78,6 +78,14 @@ function App() {
         <Slack />
         <Github className="ml-[26.5px]" />
       </div>
+      <footer className="w-full py-[48px] justify-center hidden lg:block">
+        <div className="w-[1216px] pt-[32px] flex flex-row justify-between items-center mx-auto border-t-2 border-t-gray-200">
+          <Zuri />
+          <p className="text-center">HNG Internship 9 Frontend Task</p>
+
+          <I4g className="" />
+        </div>
+      </footer>
     </main>
   );
 }
