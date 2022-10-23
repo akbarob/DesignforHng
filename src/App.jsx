@@ -95,7 +95,7 @@ function App() {
 
       <div className="flex justify-center mt-[24px] h-[72px]  items-center">
         <Slack />
-        <Github className="ml-[26.5px]" />
+        <Github className="ml-[27px]" />
       </div>
       <footer className="w-full py-[48px] justify-center hidden lg:block">
         <div className="w-[1216px] pt-[32px] flex flex-row justify-between items-center mx-auto border-t-2 border-t-gray-200">
